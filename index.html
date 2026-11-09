@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Justin Davis ❤️ Ashley Thankachan | Wedding Invitation | DEVORAQ</title>
+  
+  <!-- SEO & Social Sharing Meta Tags -->
+  <meta name="description" content="Together with our families, Justin Davis & Ashley Thankachan joyfully invite you to celebrate our wedding on Saturday, 21 August 2027 at Wedding Auditorium, Angamaly, Kerala.">
+  <meta name="theme-color" content="#0e382b">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Justin Davis & Ashley Thankachan – Wedding Invitation">
+  <meta property="og:description" content="A Celebration of Love: 21 August 2027 at Wedding Auditorium, Angamaly, Kerala. You are warmly invited!">
+  <meta property="og:image" content="assets/images/photo1.jpg">
+  
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Serif+Malayalam:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Golden Kasavu & Floral Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Background Romantic Audio Element -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="assets/music/wedding-melody.wav" type="audio/wav">
+  </audio>
+
+  <!-- Floating Audio Controls & Back to Top -->
+  <div class="floating-controls" aria-label="Interactive Controls">
+    <button id="music-toggle-btn" class="control-btn" title="Play Romantic Music" aria-label="Toggle Romantic Music">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+    </button>
+    <button id="back-to-top-btn" class="control-btn back-to-top" title="Scroll to Top" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1 – CINEMATIC OPENING (HERO)
+       ========================================================================== -->
+  <header class="hero-section" id="hero">
+    <div class="hero-background" role="img" aria-label="Justin Davis and Ashley Thankachan"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <!-- Kerala Floral Motif / Monogram Icon -->
+      <svg class="hero-crest" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" stroke="#c5a059" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="50" cy="50" r="41" stroke="#e6ca85" stroke-width="1"/>
+        <path d="M50 15 C45 35 35 45 15 50 C35 55 45 65 50 85 C55 65 65 55 85 50 C65 45 55 35 50 15 Z" fill="url(#crest-gold-grad)"/>
+        <circle cx="50" cy="50" r="4" fill="#ffffff"/>
+        <defs>
+          <linearGradient id="crest-gold-grad" x1="15" y1="15" x2="85" y2="85" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ecd599"/>
+            <stop offset="0.5" stop-color="#c5a059"/>
+            <stop offset="1" stop-color="#9c7830"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <span class="hero-subheading">A Celebration of Love</span>
+
+      <div class="hero-couple-names">
+        <h1 class="name">JUSTIN DAVIS</h1>
+        <span class="ampersand">&amp;</span>
+        <h2 class="name">ASHLEY THANKACHAN</h2>
+      </div>
+
+      <div class="hero-date-badge">
+        <span class="hero-date-text">21 AUGUST 2027</span>
+      </div>
+
+      <button id="open-invitation-btn" class="hero-open-btn" aria-label="Open Wedding Invitation">
+        <span>OPEN INVITATION</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 2 – WEDDING INVITATION
+       ========================================================================== -->
+  <section class="section-wrapper invitation-section" id="invitation">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">WITH JOYFUL HEARTS</span>
+        <h2 class="section-title">Wedding Invitation</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">✦</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="invitation-card fade-up">
+        <!-- Kerala Nilavilakku (Traditional Brass Lamp) Vector Illustration -->
+        <svg class="invitation-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M32 6 C30 12 28 16 32 20 C36 16 34 12 32 6 Z" fill="#ecd599"/>
+          <ellipse cx="32" cy="22" rx="14" ry="4" fill="#c5a059"/>
+          <path d="M26 22 L29 44 H35 L38 22 Z" fill="#9c7830"/>
+          <ellipse cx="32" cy="44" rx="10" ry="3" fill="#c5a059"/>
+          <rect x="30" y="44" width="4" height="12" fill="#c5a059"/>
+          <path d="M20 58 C20 54 44 54 44 58 L48 60 H16 L20 58 Z" fill="#9c7830"/>
+        </svg>
+
+        <p class="invitation-en-text">
+          "Together with our beloved families, we joyfully invite you to celebrate the beginning of our beautiful journey together."
+        </p>
+
+        <p class="invitation-ml-text malayalam-font">
+          "മാതാപിതാക്കളുടെ അനുഗ്രഹത്തോടെ ഞങ്ങളുടെ ജീവിതത്തിലെ ഏറ്റവും മനോഹരമായ ഈ മുഹൂർത്തത്തിലേക്ക് നിങ്ങളെ സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3 – OUR FAMILIES
+       ========================================================================== */ -->
+  <section class="section-wrapper families-section" id="families">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">PILLARS OF OUR LIVES</span>
+        <h2 class="section-title">Our Families</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="families-grid">
+        <!-- BRIDE'S FAMILY CARD -->
+        <div class="family-card fade-up">
+          <span class="family-badge">BRIDE</span>
+          <h3 class="family-member-name">Ashley Thankachan</h3>
+          <p class="family-relation">Daughter of</p>
+          <p class="family-parents">Thankachan &amp; Biji</p>
+          <div class="family-card-motif">
+            <span>❦ ❦ ❦</span>
+          </div>
+        </div>
+
+        <!-- GROOM'S FAMILY CARD -->
+        <div class="family-card fade-up">
+          <span class="family-badge">GROOM</span>
+          <h3 class="family-member-name">Justin Davis</h3>
+          <p class="family-relation">Son of</p>
+          <p class="family-parents">Davis &amp; Thankam Mohan</p>
+          <div class="family-card-motif">
+            <span>❦ ❦ ❦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4 – OUR BEAUTIFUL MOMENTS (GALLERY)
+       ========================================================================== -->
+  <section class="section-wrapper gallery-section" id="moments">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">CHERISHED MEMORIES</span>
+        <h2 class="section-title light">Our Beautiful Moments</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">✦</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1: Main Introduction -->
+        <div class="gallery-item item-1 fade-up" data-index="0" role="button" tabindex="0" aria-label="View photo: The Journey Begins">
+          <img src="assets/images/photo1.jpg" alt="Justin Davis and Ashley Thankachan - The Journey Begins" loading="lazy">
+          <div class="gallery-overlay">
+            <h4 class="gallery-caption">The Journey Begins</h4>
+            <span class="gallery-subtext">Tap to enlarge ↗</span>
+          </div>
+        </div>
+
+        <!-- Photo 2: Couple Gallery -->
+        <div class="gallery-item item-2 fade-up" data-index="1" role="button" tabindex="0" aria-label="View photo: Walking Hand in Hand">
+          <img src="assets/images/photo2.jpg" alt="Couple walking together happily outdoors" loading="lazy">
+          <div class="gallery-overlay">
+            <h4 class="gallery-caption">Walking Hand in Hand</h4>
+            <span class="gallery-subtext">Tap to enlarge ↗</span>
+          </div>
+        </div>
+
+        <!-- Photo 3: Featured Couple Photograph -->
+        <div class="gallery-item item-3 fade-up" data-index="2" role="button" tabindex="0" aria-label="View photo: Featured Portrait - Laughter, Love & Pure Joy">
+          <span class="featured-badge">Featured Portrait</span>
+          <img src="assets/images/photo3.jpg" alt="Justin and Ashley smiling closely - Featured Portrait" loading="lazy">
+          <div class="gallery-overlay">
+            <h4 class="gallery-caption">Laughter, Love &amp; Pure Joy</h4>
+            <span class="gallery-subtext">Featured Photograph ↗</span>
+          </div>
+        </div>
+
+        <!-- Photo 4: Final Gallery Photograph (Traditional Kerala Attire) -->
+        <div class="gallery-item item-4 fade-up" data-index="3" role="button" tabindex="0" aria-label="View photo: Rooted in Tradition">
+          <img src="assets/images/photo4.jpg" alt="Justin and Ashley in traditional Kerala attire" loading="lazy">
+          <div class="gallery-overlay">
+            <h4 class="gallery-caption">Rooted in Tradition</h4>
+            <span class="gallery-subtext">Tap to enlarge ↗</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery lightbox">
+    <button class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next Image">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrapper">
+        <img src="assets/images/photo1.jpg" alt="Enlarged gallery photograph" class="lightbox-img" id="lightbox-img">
+      </div>
+      <div class="lightbox-caption-bar">
+        <p class="lightbox-caption" id="lightbox-caption">The Journey Begins</p>
+        <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 5 – WEDDING COUNTDOWN
+       ========================================================================== -->
+  <section class="section-wrapper countdown-section" id="countdown">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">COUNTING THE MOMENTS</span>
+        <h2 class="section-title light">The Big Day Awaits</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">✦</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="countdown-box fade-up">
+        <div class="countdown-grid">
+          <div class="countdown-unit">
+            <div class="countdown-num" id="countdown-days">00</div>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="countdown-hours">00</div>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="countdown-minutes">00</div>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="countdown-seconds">00</div>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="countdown-finished-msg" id="countdown-finished-msg">
+          "Today marks the beginning of our forever."
+        </div>
+
+        <button id="add-calendar-btn" class="calendar-action-btn" aria-label="Add wedding to Google Calendar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Save The Date to Calendar</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6 – WEDDING CEREMONY (EVENT CARD)
+       ========================================================================== -->
+  <section class="section-wrapper ceremony-section" id="ceremony">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">SAVE OUR AUSPICIOUS DATE</span>
+        <h2 class="section-title">The Sacred Union</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="ceremony-card fade-up">
+        <h3 class="ceremony-title">WEDDING CEREMONY</h3>
+
+        <div class="ceremony-date-box">
+          <span class="ceremony-day">Saturday</span>
+          <span class="ceremony-date-highlight">21 August 2027</span>
+          <span class="ceremony-time">10:00 AM IST</span>
+        </div>
+
+        <div class="ceremony-venue-box">
+          <h4 class="venue-name">Wedding Auditorium</h4>
+          <p class="venue-city">Angamaly, Kerala</p>
+        </div>
+
+        <p class="ceremony-ml-blessing malayalam-font">
+          "ഈ സന്തോഷനിമിഷത്തിൽ നിങ്ങളുടെ സാന്നിധ്യവും അനുഗ്രഹവും സ്നേഹപൂർവ്വം പ്രതീക്ഷിക്കുന്നു."
+        </p>
+
+        <div class="venue-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=Wedding+Auditorium+Angamaly+Kerala" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="map-btn" 
+             aria-label="View Wedding Auditorium Angamaly on Google Maps">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span>View Venue on Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7 – RSVP
+       ========================================================================== -->
+  <section class="section-wrapper rsvp-section" id="rsvp">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">KINDLY RESPOND</span>
+        <h2 class="section-title">Will You Join Us?</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">✦</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="rsvp-card fade-up">
+        <p class="rsvp-intro">
+          Please let us know if you can attend our special day so we can arrange for your warm hospitality.
+        </p>
+
+        <form id="wedding-rsvp-form" class="rsvp-form" novalidate>
+          <div class="form-group">
+            <label for="rsvp-name" class="form-label">Guest Full Name *</label>
+            <input type="text" id="rsvp-name" class="form-input" placeholder="e.g. Thomas Mathew" required>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-count" class="form-label">Number of Guests</label>
+            <select id="rsvp-count" class="form-select">
+              <option value="1">1 Person</option>
+              <option value="2" selected>2 Persons</option>
+              <option value="3">3 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="5+">5+ Persons (Family)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Will you attend? *</label>
+            <div class="attendance-options">
+              <label class="attendance-label selected">
+                <input type="radio" name="attendance" value="Yes" checked>
+                <span>Yes, Joyfully!</span>
+              </label>
+              <label class="attendance-label">
+                <input type="radio" name="attendance" value="No">
+                <span>Regretfully Decline</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-wishes" class="form-label">Heartfelt Message / Wishes (Optional)</label>
+            <textarea id="rsvp-wishes" class="form-textarea" rows="3" placeholder="Leave a sweet blessing for Justin & Ashley..."></textarea>
+          </div>
+
+          <button type="submit" class="rsvp-submit-btn" aria-label="Send RSVP via WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.18-.54.06s-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+            </svg>
+            <span>Send RSVP via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8 – SHARE INVITATION
+       ========================================================================== -->
+  <section class="section-wrapper share-section" id="share">
+    <div class="container">
+      <div class="share-card fade-up">
+        <span class="section-subtitle">SPREAD THE JOY</span>
+        <h2 class="section-title">Share the Invitation</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="motif">❖</span>
+          <span class="line"></span>
+        </div>
+
+        <p style="color: var(--text-muted); margin-top: 1.2rem;">
+          Help us invite friends and loved ones to our celebration of love.
+        </p>
+
+        <div class="share-buttons-grid">
+          <!-- WhatsApp Share -->
+          <button class="share-btn whatsapp" id="share-whatsapp" aria-label="Share via WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.18-.54.06s-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </button>
+
+          <!-- Facebook Share -->
+          <button class="share-btn facebook" id="share-facebook" aria-label="Share on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.64 13.77 5.64c1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.23 0-1.62.77-1.62 1.56V12h2.77l-.44 3h-2.33v6.8c4.56-.93 8-4.96 8-9.8z"/>
+            </svg>
+            <span>Facebook</span>
+          </button>
+
+          <!-- Copy Link -->
+          <button class="share-btn copy" id="share-copy" aria-label="Copy invitation link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Link</span>
+          </button>
+
+          <!-- Native Mobile Share API -->
+          <button class="share-btn native" id="share-native" aria-label="Open Mobile Share Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <span>Share...</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification for Copy Link -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite">
+    Invitation link copied to clipboard! ✨
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 9 – FINAL GREETING & FOOTER
+       ========================================================================== -->
+  <footer class="footer-section" id="footer">
+    <div class="container footer-content fade-up">
+      <p class="final-quote">
+        "Your Presence Will Make Our Day More Special."
+      </p>
+
+      <p class="final-with-love">
+        With Love, Justin &amp; Ashley
+      </p>
+
+      <div class="brand-wrapper">
+        <span class="brand-name">DEVORAQ</span>
+        <span class="brand-tagline">DESIGN. DEVELOP. DELIVER.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
