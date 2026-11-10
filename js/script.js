@@ -221,28 +221,32 @@ function initCountdownTimer() {
 }
 
 /* ==========================================================================
-   3. GALLERY LIGHTBOX & NAVIGATION
+   3. GALLERY LIGHTBOX & NAVIGATION & DOWNLOAD
    ========================================================================== */
 const galleryImages = [
   {
     src: "assets/images/photo1.jpg",
     caption: "The Journey Begins – Justin & Ashley",
-    alt: "Justin and Ashley smiling together on their journey"
+    alt: "Justin and Ashley smiling together on their journey",
+    downloadName: "Justin-Ashley-Wedding-Photo-1.jpg"
   },
   {
     src: "assets/images/photo2.jpg",
     caption: "Walking Together Hand in Hand",
-    alt: "Couple walking together happily outdoors"
+    alt: "Couple walking together happily outdoors",
+    downloadName: "Justin-Ashley-Wedding-Photo-2.jpg"
   },
   {
     src: "assets/images/photo3.jpg",
     caption: "Laughter, Love & Pure Joy",
-    alt: "Featured portrait of Justin and Ashley smiling"
+    alt: "Featured portrait of Justin and Ashley smiling",
+    downloadName: "Justin-Ashley-Wedding-Photo-3.jpg"
   },
   {
     src: "assets/images/photo4.jpg",
     caption: "Rooted in Tradition, Bound in Love",
-    alt: "Traditional Kerala celebration of love"
+    alt: "Traditional Kerala celebration of love",
+    downloadName: "Justin-Ashley-Wedding-Photo-4.jpg"
   }
 ];
 
@@ -257,8 +261,62 @@ function initGalleryLightbox() {
   const closeBtn = document.getElementById("lightbox-close");
   const prevBtn = document.getElementById("lightbox-prev");
   const nextBtn = document.getElementById("lightbox-next");
+  const downloadTopBtn = document.getElementById("lightbox-top-download");
+  const downloadBarBtn = document.getElementById("lightbox-download-btn");
 
   if (!lightbox) return;
+
+  function triggerDownload(url, filename) {
+    fetch(url)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const blobUrl = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.style.display = "none";
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(blobUrl);
+        }, 300);
+      })
+      .catch(() => {
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        a.target = "_blank";
+        a.click();
+      });
+  }
+
+  // Handle all in-grid .gallery-download-pill clicks
+  document.querySelectorAll(".gallery-download-pill").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const href = btn.getAttribute("href");
+      const dl = btn.getAttribute("download") || "Justin-Ashley-Wedding-Photo.jpg";
+      triggerDownload(href, dl);
+    });
+  });
+
+  if (downloadTopBtn) {
+    downloadTopBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const imgData = galleryImages[currentLightboxIndex];
+      triggerDownload(imgData.src, imgData.downloadName || `Justin-Ashley-Wedding-Photo-${currentLightboxIndex + 1}.jpg`);
+    });
+  }
+
+  if (downloadBarBtn) {
+    downloadBarBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const imgData = galleryImages[currentLightboxIndex];
+      triggerDownload(imgData.src, imgData.downloadName || `Justin-Ashley-Wedding-Photo-${currentLightboxIndex + 1}.jpg`);
+    });
+  }
 
   galleryItems.forEach((item) => {
     item.addEventListener("click", () => {
@@ -275,6 +333,16 @@ function initGalleryLightbox() {
     lightboxImg.alt = imgData.alt;
     lightboxCaption.textContent = imgData.caption;
     lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${galleryImages.length}`;
+
+    const downloadFilename = imgData.downloadName || `Justin-Ashley-Wedding-Photo-${currentLightboxIndex + 1}.jpg`;
+    if (downloadTopBtn) {
+      downloadTopBtn.href = imgData.src;
+      downloadTopBtn.setAttribute("download", downloadFilename);
+    }
+    if (downloadBarBtn) {
+      downloadBarBtn.href = imgData.src;
+      downloadBarBtn.setAttribute("download", downloadFilename);
+    }
 
     lightbox.classList.add("active");
     document.body.style.overflow = "hidden";

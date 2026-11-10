@@ -191,7 +191,17 @@
           <img src="assets/images/photo1.jpg" alt="Justin Davis and Ashley Thankachan - The Journey Begins" loading="lazy">
           <div class="gallery-overlay">
             <h4 class="gallery-caption">The Journey Begins</h4>
-            <span class="gallery-subtext">Tap to enlarge ↗</span>
+            <div class="gallery-meta-row">
+              <span class="gallery-subtext">Tap to enlarge ↗</span>
+              <a href="assets/images/photo1.jpg" download="Justin-Ashley-Wedding-Photo-1.jpg" class="gallery-download-pill" title="Download this photo" aria-label="Download Photo 1" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -200,7 +210,17 @@
           <img src="assets/images/photo2.jpg" alt="Couple walking together happily outdoors" loading="lazy">
           <div class="gallery-overlay">
             <h4 class="gallery-caption">Walking Hand in Hand</h4>
-            <span class="gallery-subtext">Tap to enlarge ↗</span>
+            <div class="gallery-meta-row">
+              <span class="gallery-subtext">Tap to enlarge ↗</span>
+              <a href="assets/images/photo2.jpg" download="Justin-Ashley-Wedding-Photo-2.jpg" class="gallery-download-pill" title="Download this photo" aria-label="Download Photo 2" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -210,7 +230,17 @@
           <img src="assets/images/photo3.jpg" alt="Justin and Ashley smiling closely - Featured Portrait" loading="lazy">
           <div class="gallery-overlay">
             <h4 class="gallery-caption">Laughter, Love &amp; Pure Joy</h4>
-            <span class="gallery-subtext">Featured Photograph ↗</span>
+            <div class="gallery-meta-row">
+              <span class="gallery-subtext">Featured Photograph ↗</span>
+              <a href="assets/images/photo3.jpg" download="Justin-Ashley-Wedding-Photo-3.jpg" class="gallery-download-pill" title="Download this photo" aria-label="Download Photo 3" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -219,7 +249,17 @@
           <img src="assets/images/photo4.jpg" alt="Justin and Ashley in traditional Kerala attire" loading="lazy">
           <div class="gallery-overlay">
             <h4 class="gallery-caption">Rooted in Tradition</h4>
-            <span class="gallery-subtext">Tap to enlarge ↗</span>
+            <div class="gallery-meta-row">
+              <span class="gallery-subtext">Tap to enlarge ↗</span>
+              <a href="assets/images/photo4.jpg" download="Justin-Ashley-Wedding-Photo-4.jpg" class="gallery-download-pill" title="Download this photo" aria-label="Download Photo 4" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -228,6 +268,13 @@
 
   <!-- Interactive Lightbox Modal -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery lightbox">
+    <a class="lightbox-btn lightbox-download-icon" id="lightbox-top-download" href="assets/images/photo1.jpg" download="Justin-Ashley-Wedding-Photo-1.jpg" title="Download Photo" aria-label="Download Current Photo">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </a>
     <button class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -251,7 +298,17 @@
       </div>
       <div class="lightbox-caption-bar">
         <p class="lightbox-caption" id="lightbox-caption">The Journey Begins</p>
-        <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
+        <div class="lightbox-actions-bar">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
+          <a id="lightbox-download-btn" class="lightbox-download-btn" href="assets/images/photo1.jpg" download="Justin-Ashley-Wedding-Photo-1.jpg" title="Download HD Photo">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Photo</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
